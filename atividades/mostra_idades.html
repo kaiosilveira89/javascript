@@ -1,0 +1,26 @@
+<script>
+var pulaLinha = function(){
+document.write("<br><hr><br>");
+};
+
+var mostrar = function (frase) {
+
+    document.write("<big>" + frase + "</big>");
+
+    pulaLinha();
+
+    };
+
+var ano = 2012;
+var eu = 25;
+var adriano = 26;
+var paulo = 32;
+var total = eu + adriano + paulo;
+var media = total/3;
+
+mostrar("Eu nasci em: "+(ano - eu));
+mostrar("Adriano nasceu em: " + (ano - adriano));
+mostrar("Paulo nasceu em: " + (ano - paulo));
+mostrar("A soma das nossas idade foi: " + total);
+mostrar("A media de idade foi: " + Math.round(media));
+</script>
