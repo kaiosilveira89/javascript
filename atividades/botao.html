@@ -5,7 +5,15 @@
     </head>
 
     <body>
-        <button onclick="alert('Test alert')">Click in here</button>
-        
+
+        <input type="text" placeholder="inform text" id="text">
+
+        <button onclick="alertMsg()">Click in here</button>
+        <script>
+            function alertMsg(){
+                var text = document.querySelector('#text').value;
+                alert(text);
+            }
+        </script>
     </body>
 </html>
