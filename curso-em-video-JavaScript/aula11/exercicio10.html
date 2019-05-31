@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Multas</title>
+    <style>
+        h1 {
+            font: normal 20pt arial;
+        }
+
+        body{
+            font: normal 12pt arial;
+        }
+
+        input {
+            font: normal 12pt arial;
+            width: 100px;
+
+        }
+
+        div#resultado {
+            font: normal 12pt arial;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+
+    Velocidade do veiculo: <input type="number" name="vel" id="vel">
+    <input type="button" value="Analisar" onclick="multa()">
+    <div id="resultado">Sem analise</div>
+
+    <script>
+
+        function multa() {
+            var velocidade = window.document.querySelector('input#vel')
+            var res = window.document.getElementById('resultado')
+            var v = Number(velocidade.value)
+            if (v > 60) {
+                res.innerHTML = `Condutor ultrapassou a velocidade permitida de 60km/h, estando a ${v}km/h, <strong>e sera multado</strong>`
+                res.style.color = 'red'
+            } else {
+                res.innerHTML = `Condutor abaixo do limite permitido 60km/h, estando a ${v}km/h, <strong>sem registro de infracao</strong>`
+                res.style.color = 'green'
+                
+                
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio2 - manipulando variaveis</title>
+
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var nome = window.prompt(`Qual seu nome?`);
+        window.confirm(`Seu nome e ${nome}?`);
+        window.alert(`Ola ${nome}`);
+    </script>
+
+    <h1>Manipulando Strings!</h1>
+    <p>Meu segundo programa.<br>
+
+        <script>
+        
+        document.writeln(` ${nome}, voce ficou livre da maldicao. Muito bem!<br>`);
+        document.writeln(`Sabe quantas letras o nome ${nome} tem? ${nome.length} letras.<br>`);
+        document.writeln(`Olha seu nome todo minusculo: ${nome.toLowerCase()}<br>`);
+        document.writeln(`Agora, olha ele todo maiusculo: ${nome.toUpperCase()}<br>`);
+        
+        </script>
+
+
+</body>
+
+</html>
